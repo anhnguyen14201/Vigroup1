@@ -1,4 +1,5 @@
 /* ===================== NAV ====================== */
+
 .nav {
     max-width: 968px;
     height: var(--header-height);
@@ -434,7 +435,8 @@
 }
 
 .button--link {
-    padding: 0;
+    display: flex;
+    justify-content: center;
     background-color: transparent;
     color: var(--first-color);
 }
@@ -580,6 +582,8 @@
     border-radius: .5rem;
 }
 
+
+
 .services__modal-service {
     row-gap: 1rem;
     display: flex;
@@ -592,10 +596,7 @@
 }
 
 .services__modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
+    /* position: absolute; */
     color: var(--first-color);
     cursor: pointer;
 }
@@ -943,6 +944,9 @@
   
 
  /* ================== PROJECTS =================== */
+ .projects__modal-content{
+    width: 100%;
+}
 .icon-close {
     display: flex;
     justify-content: end;
@@ -1099,6 +1103,7 @@
     .project__img {
         width: 200px;
     }
+
 }
 
 /* For medium devices */
@@ -1121,7 +1126,6 @@
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 
 
 }
@@ -1312,6 +1316,9 @@
         align-items: center;
     }
 
+    .projects__modal-content{
+        width: 45%;
+    }
 
     .footer__container {
         grid-template-columns: repeat(3, 1fr);
